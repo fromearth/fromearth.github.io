@@ -1,17 +1,28 @@
 body {
     font-family: Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    background-color: FloralWhite;
-    color: #333;
+    background-color: #200;
+    color: #866;
 }
 
 h1 {
-    /*
-    text-shadow: 0 0 8px White;
-    */
+    text-shadow: 1px 1px 2px White;
 }
 
 hr {
-    box-shadow: 0 0 2px rgba(0,0,0,0.6);
+    border-color: #866;
+    box-shadow: 0 0 2px 1px #866;
+}
+
+img {
+    border: 6px double #866;
+}
+
+a:hover {
+    color: #ff4500;
+}
+
+p {
+    color: #770;
 }
 
 .window {
@@ -25,4 +36,27 @@ hr {
     text-wrap: none;
     overflow: auto;
     border: 2px solid YellowGreen;
+}
+
+#titles{
+    position: relative;
+    width: 30em;
+    height: 15em;
+    top: -2em;
+    left: 50%;
+    margin-left: -15em;
+    font-weight: bold;
+    overflow: hidden;
+    transform: perspective(200px) rotateX(60deg);
+}
+
+#titlecontent{
+    position: relative;
+    top: 100%;
+    animation: scroll 30s linear 2s infinite;
+}
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -200%; }
 }
