@@ -9,15 +9,24 @@ body {
 
 h1 {
     text-shadow: 1px 1px 2px White;
+    font-size: 36px;
+    font-weight: 500;
+    margin: .67em 0;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 hr {
     border-color: #866;
     box-shadow: 0 0 1px 0 #866;
+    margin-bottom: 16px;
+    width: 90%;
 }
 
 img {
     border: 6px double #866;
+    vertical-align: middle;
 }
 
 a {
